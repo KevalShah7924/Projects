@@ -82,7 +82,6 @@ with st.sidebar:
     * **Enterprise Ready:** Supports bulk data ingestion via CSV, JSON, and SQL.
     ---
     """)
-    st.caption("🚀 Optimized for Maximum Predictive Accuracy")
 
 st.title("🌾 Smart Farming: AI Yield Prediction System")
 
