@@ -13,7 +13,7 @@ from sklearn.impute import SimpleImputer
 # 1. CORE AI ENGINE (No Date Features)
 
 def train_and_save_model(csv_path):
-    df = pd.read_csv(csv_path)
+    df = pd.read_csv(data/Smart_Farming_Crop_Yield_2024.csv)
     
     # Internal Engineering (No Dates)
     df['health_water_index'] = df['NDVI_index'] * df['soil_moisture_%']
