@@ -10,16 +10,15 @@ from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
 from sklearn.impute import SimpleImputer
 
-# ==========================================
 # 1. MODEL ENGINE (Handles .pkl Generation)
-# ==========================================
+
 
 def train_and_save_model(csv_path):
     """
     Trains the model and saves it as crop_model_v3.pkl.
     This ensures the .pkl and the .py file are always in sync.
     """
-    df = pd.read_csv("Smart_Farming_Crop_Yield_2024")
+    df = pd.read_csv("Smart_Farming_Crop_Yield_2024.csv")
     
     # Internal Feature Engineering
     df['health_water_index'] = df['NDVI_index'] * df['soil_moisture_%']
@@ -63,9 +62,7 @@ def train_and_save_model(csv_path):
         pickle.dump(pipeline, f)
     return pipeline
 
-# ==========================================
 # 2. STREAMLIT UI & SIDEBAR
-# ==========================================
 
 st.set_page_config(page_title="Master Crop AI", layout="wide")
 
