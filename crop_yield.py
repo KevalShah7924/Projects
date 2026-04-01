@@ -19,7 +19,7 @@ def train_and_save_model(csv_path):
     Trains the model and saves it as crop_model_v3.pkl.
     This ensures the .pkl and the .py file are always in sync.
     """
-    df = pd.read_csv(csv_path)
+    df = pd.read_csv("Smart_Farming_Crop_Yield_2024")
     
     # Internal Feature Engineering
     df['health_water_index'] = df['NDVI_index'] * df['soil_moisture_%']
