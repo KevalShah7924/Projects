@@ -7,3 +7,4 @@ faker
 torch
 torchvision
 statsmoodel
+plotly
