@@ -6,6 +6,6 @@ plotly
 faker
 torch
 torchvision
-statsmoodel
+statsmodels
 plotly
 time
