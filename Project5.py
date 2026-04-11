@@ -9,7 +9,8 @@ from torch.utils.data import DataLoader
 import os
 
 # Configuration
-DATA_DIR = r"D:\vscode\.vscode\Python\practice\dataset\images"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DATA_DIR = os.path.join(BASE_DIR, "dataset")
 CLASSES = ['bird', 'drone']
 BATCH_SIZE = 64
 EPOCHS = 5
